@@ -16,8 +16,8 @@
                 if (db) return
                 db = true
                 webSocket.send(JSON.stringify({
-                    "Action":"Execute",
-                    "Code":code.value
+                    "Action": "Execute",
+                    "Code": code.value
                 }))
                 event.innerText = "Executed!"
                 setTimeout(() => {
